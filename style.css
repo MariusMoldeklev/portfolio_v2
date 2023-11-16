@@ -1,0 +1,254 @@
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+body {
+  background-image:linear-gradient(to bottom left, rgb(229, 231, 199), rgb(83, 151, 197),rgb(229, 231, 199) );
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    transition: background-color 0.3s ease;
+    list-style-type: none;
+  }
+
+  .list-komp {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+  }
+.nav-div {
+  width: 100vw;
+}
+ul {
+  list-style: none;
+}
+  .navbar {
+    display: flex;
+  
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0; /* Adjust as needed */
+  }
+  
+  .navlist {
+    list-style: none;
+    display: flex;
+    margin: 2px;
+    align-items: center;
+  
+  }
+  .list { 
+    border: solid 2px white;
+    margin: 2px;
+    padding: 4px;
+  }
+  .navbar a {
+    color: rgb(243, 243, 243);
+    text-decoration: none;
+  }
+  .toggle-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-body {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .hero-footer-text {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .hero-text {
+    position: relative;
+    transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Add smooth transitions for color, box shadow, and transform */
+  }
+  
+  .hero-text:hover {
+    color: #5334db;
+     /* Change the text color on hover */
+    text-shadow: 2px 1px 0px rgb(3, 3, 3); /* Add a subtle box shadow on hover */
+    transform: scale(1.5); /* Zoom in slightly on hover */
+
+}
+  .info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-overskrift {
+    text-align: center;
+    padding: 40px;
+  }
+  .info-me {
+    width: 50%;
+    
+
+  }
+  .hero-foot {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .code {
+    width: 90%;
+    height: 250px;
+    border-radius: 2%;
+ 
+  }
+  
+  .toggle-input {
+    display: none;
+  }
+  
+  .toggle-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .toggle-text {
+    margin: 0 10px;
+    color: white;
+  }
+  
+  .toggle-icon {
+    display: inline-block;
+    width: 96px;
+    height: 43px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .kompetanse-overskrift{
+    padding-top: 200px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+ 
+  .code-language {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+  }
+  .dark-mode {
+    background-image:linear-gradient(to bottom right,#0d0d0d, #210891, #0d0d0d);
+    background: cover;
+    color: rgb(229, 231, 199);
+  }
+  
+  .dark-text{
+    color: rgb(241, 239, 239);
+  }
+  
+  .light-text {
+    color: rgb(217, 255, 0);
+  }
+  
+  
+  #toggle:checked + .toggle-label #toggleIcon {
+    background-image: url('img/dark mode.png');
+  }
+  
+  #toggle:not(:checked) + .toggle-label #toggleIcon {
+    background-image: url('img/light mode.png');
+  }
+  
+  .border {
+    border: solid black 1px;
+  }
+  footer {
+    margin-top: auto;
+  }
+
+  .project {
+    padding: 120px 0 50px 0;
+    text-align: center; 
+  }
+  
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .padding-project-box {
+    padding-top: 50px;
+  }
+  .individual-project-div {
+    width: 48%;
+  }
+  .img-screenshot {
+    height: 50%;
+    width: 70%;
+    transition: border-radius 0.3s ease;
+  }
+  .img-screenshot:hover {
+    border-radius: 20%;
+    
+  }
+  .⮝ {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    
+  }
+  .bildeholder{
+    width: 20%;
+    border:solid 2px rgb(18, 24, 110, 0.623);
+    background-color: aliceblue;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+  
+  }
+
+  .profil {
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border-top-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+  }
+
+  .spacer {
+    width: 80vw;
+    padding-top: 180px;
+    text-align: end;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+    
+    .nav_bar_div {
+      flex-direction: column;
+    }
+    
+    .navlist {
+      text-align: center;
+      padding: 10px;
+    }
+  }
+  
