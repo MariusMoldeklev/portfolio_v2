@@ -225,6 +225,11 @@ ul {
     margin-top: auto;
   }
 
+  .project-headline {
+    margin-top: 100px;
+    text-align: center;
+    text-decoration: underline;
+  }
   .project {
     padding: 120px 0 50px 0;
     text-align: center; 
