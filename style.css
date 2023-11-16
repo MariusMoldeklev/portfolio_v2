@@ -307,12 +307,17 @@ ul {
     .navlist {
       text-align: center;
       padding: 10px;
+      flex-wrap: wrap;
+    
     }
     .morph2 {
       z-index: 0;
     }
-    .navlist {
-      flex-wrap: wrap;
+    .nav-div {
+      z-index: 12;
+    }
+    .morph3 {
+      z-index: -1;
     }
   }
 
