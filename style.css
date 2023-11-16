@@ -231,9 +231,11 @@ ul {
   }
 
   .spacer {
-    width: 80vw;
-    padding-top: 180px;
+    width: 100vw;
+    padding-top: 20px;
+    margin-top: 180px;
     text-align: end;
+    background-color: #333 ;
   }
 
 
